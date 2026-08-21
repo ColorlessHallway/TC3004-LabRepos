@@ -1,15 +1,14 @@
 import { useState } from 'react'
 import PropTypes from 'prop-types'
-//Posible error falso con instalacion de prop-types. Funciona bien.
 
 export const CounterApp = ({ value = 0}) => {
     const [counter, setCounter] = useState(value);
 
-    const handleAdd = () => {
+    const useAdd = () => {
         setCounter(counter + 1);
     };
 
-    const handleSubstract = () => {
+    const useSubstract = () => {
         setCounter(counter - 1);
     };
 
@@ -18,8 +17,8 @@ export const CounterApp = ({ value = 0}) => {
             <h1>CounterApp</h1>
             <h2> {value} </h2>
             <h3> {counter} </h3>
-            <button onClick={handleAdd}>+1</button>
-            <button onClick={handleSubstract}>-1</button>
+            <button onClick={useAdd}>+1</button>
+            <button onClick={useSubstract}>-1</button>
         </div>
     )
 }

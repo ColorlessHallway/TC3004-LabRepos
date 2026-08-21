@@ -1,22 +1,18 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 
-interface CounterAppProps {
-  value: number;
-}
+export const CounterApp = ({ value }) => {
+  const [counter, setCounter] = useState(value);
 
-export const CounterApp = ({ value }: CounterAppProps) => {
-  const [counter, setCounter] = useState<number>(value);
-
-  const handleAdd = (): void => {
+  const handleAdd = () => {
     setCounter(counter + 1);
   };
 
-  const handleSubtract = (): void => {
+  const handleSubtract = () => {
     setCounter(counter - 1);
   };
 
-  const handleReset = (): void => {
+  const handleReset = () => {
     setCounter(value);
   };
 
@@ -33,7 +29,10 @@ export const CounterApp = ({ value }: CounterAppProps) => {
   );
 };
 
-// PropTypes opcional si ya usas TypeScript, pero incluido para cumplir con la regla explícita
 CounterApp.propTypes = {
   value: PropTypes.number.isRequired,
+};
+
+CounterApp.defaultProps = {
+  value: 0,
 };
