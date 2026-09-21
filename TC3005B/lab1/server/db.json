@@ -1,0 +1,30 @@
+[
+  {
+    "id": 2,
+    "departmentName": "Human Resources",
+    "auditStatus": "In Progress",
+    "lastAudited": "2026-09-15",
+    "auditorName": "Miguel Ruiz"
+  },
+  {
+    "id": 3,
+    "departmentName": "Operations",
+    "auditStatus": "Pending",
+    "lastAudited": "2026-09-04",
+    "auditorName": "Camila Vega"
+  },
+  {
+    "id": 4,
+    "departmentName": "IT",
+    "auditStatus": "Failed",
+    "lastAudited": "2026-09-18",
+    "auditorName": "Daniel Flores"
+  },
+  {
+    "id": 5,
+    "departmentName": "Test",
+    "auditStatus": "Pending",
+    "lastAudited": "11111-11-11",
+    "auditorName": "Carlos"
+  }
+]
